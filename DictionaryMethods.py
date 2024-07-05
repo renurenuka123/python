@@ -65,4 +65,6 @@ print("New dictionary created from keys with default value:", new_dict)
 
 # Clearing the dictionary
 my_dict.clear()
-print("Cleared dictionary:",my_dict)
+print("Cleared dictionary:", my_dict)
+
+

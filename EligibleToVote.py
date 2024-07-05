@@ -2,24 +2,24 @@ from tkinter import *
 from tkinter import messagebox
 from PIL import ImageTk, Image
 
-def prime_no():
+def check_eligibility():
     num = int(numEntry.get())
-    flag = False
-    if num <= 1:
-        messagebox.showinfo("PRIME-NUMBER CHECKER"," It is not prime nor composite")
-    elif num > 1:
-        for i in range(2, num):
-            if (num % i) == 0:
-                flag = True
-                break
-    if flag:
-        messagebox.showinfo("PRIME-NUMBER CHECKER"," It is not prime number")
+    if num >18:
+        messagebox.showinfo("ELIGIBLE OR NOT ", " Eligible to vote")
     else:
-        messagebox.showinfo("PRIME-NUMBER CHECKER"," It is an prime number")
+        messagebox.showinfo("ELIGIBLE OR NOT", "Not Eligible to vote")
 
+
+
+def even_odd():
+    num =int(numEntry.get())
+    if num % 2 == 0:
+        messagebox.showinfo("EVEN-ODD CHECKER"," It is even number")
+    else:
+        messagebox.showinfo("EVEN-ODD CHECKER"," It is odd number")
 
 window = Tk()
-window.title("PRIME-NUMBER")
+window.title("Eligible to vote or not")
 blabel = Label(window)
 blabel.grid()
 frame = Frame(window)
@@ -32,10 +32,13 @@ numEntry = Entry(frame, width=30)
 numEntry.grid(row=0, column=1)
 
 
-submit_button = Button(frame, text="Submit", command=prime_no)
+submit_button = Button(frame, text="Submit", command=check_eligibility)
 submit_button.grid(row=1, column=1)
 
 window.mainloop()
+
+
+
 
 
 

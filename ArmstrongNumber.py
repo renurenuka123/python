@@ -34,3 +34,6 @@ submit_button = Button(frame, text="Submit", command=Armstrong_Num)
 submit_button.grid(row=1, column=1)
 
 window.mainloop()
+
+
+

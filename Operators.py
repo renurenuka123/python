@@ -113,4 +113,4 @@ print("Is not:", a is not b)  # True - Checks if both variables do not refer to 
 list1 = [1, 2, 3, 4, 5]
 print("\nMembership Operators:")
 print("In:", 2 in list1)      # True - Checks if the value exists in the sequence
-print("Not in:", 6 not in list1)  # True - Checks if the value does not exist in the sequence
+print("Not in:", 6 not in list1)  # True - Checks if the value does not exist in the sequence

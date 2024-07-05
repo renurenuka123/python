@@ -33,4 +33,3 @@ print("Set Variable:", set_variable, type(set_variable))
 # None
 none_variable = None
 print("None Variable:", none_variable, type(none_variable))
-

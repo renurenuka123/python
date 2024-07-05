@@ -44,3 +44,4 @@ submit_button = Button(frame, text="Submit", command=max_of_three)
 submit_button.grid(row=3, column=1)
 
 window.mainloop()
+

@@ -59,4 +59,4 @@ print("index():", index)
 
 # clear() - Removes all elements from the list
 my_list.clear()
-print("clear():",my_list)
+print("clear():", my_list)
